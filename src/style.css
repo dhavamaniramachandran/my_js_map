@@ -1,0 +1,145 @@
+@import "https://js.arcgis.com/4.28/@arcgis/core/assets/esri/themes/light/main.css";
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.panel {
+  position: absolute;
+  padding: 105px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000; /* Ensure the panel appears above the map */
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+
+h1,
+p,
+a{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+p {
+  font-size: 0.8em;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  background: #3383cc;
+  color: white;
+  height: 55px;
+}
+
+.container {
+  position: absolute;
+  top: 5%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.collapsible {
+  display: none;
+  padding: 20px;
+  background-color: #f1f1f1;
+  max-width: 300px; /* Set a maximum width if needed */
+  margin: auto; /* Center the collapsible div */
+  position: absolute;
+  top: 50%; /* Adjust as needed to vertically center the collapsible div */
+  left: 50%; /* Center the collapsible div horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the collapsible div is above other elements */
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.menu-bar {
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  padding: 7.5px;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+.icon-button img {
+  width: 25px; /* Adjust the width of the image */
+  margin-right: 0px; /* Add space between the image and text */
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}

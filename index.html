@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIS Application</title>
+  <script src="https://js.arcgis.com/4.28/"></script>
+
+  <!-- Add all JS pages below -->
+  <script type="module" src="src/Map.js"></script>
+  <script type="module" src="src/config.js"></script>
+  <script type="module" src="src/toolUX.js"></script>
+
+  <!-- Add all style CSS pages below -->
+  <link rel="stylesheet" href="src/style.css"></link>
+</head>
+
+<body>
+  <section class="header">
+    <h1>GIS Map Solutions</h1>
+    <p>Create an Interactive Map SOlution</p>  
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+    </div>  
+  </section>
+  
+  <div class="menu-bar">
+    <button class="icon-button" onclick="toggleMenu('divLayer')">
+      <img src="img/layers.png" alt="Icon 1"> 
+    </button>
+    <button class="icon-button" onclick="toggleMenu('divTools')">
+      <img src="img/tools.png" alt="Icon 2"> 
+    </button>
+    <!-- Add more buttons with images as needed -->
+  </div>
+ 
+  <div id="divLayer" class="menu">
+    
+  </div>
+  
+  <div id="divTools" class="menu">
+    
+  </div>
+
+  <div id="viewDiv"></div>
+
+  <!-- Floating panel div -->
+  <div id="floatingPanel" class="panel" style="display: none; left: 1000px; top: 60px;"></div>
+
+  <script>   
+  // Test all scripts here and move it to respective JS files..
+  function myFunction(x) {
+    x.classList.toggle("change");
+
+    // Toggle visibility of the collapsible div
+    var floatingPanel = document.getElementById("floatingPanel");
+    if (floatingPanel.style.display === "block") {
+      floatingPanel.style.display = "none";
+    } else {
+      floatingPanel.style.display = "block";
+    }
+  }
+
+  function toggleMenu(menuId) {
+  var menu = document.getElementById(menuId);
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+// Close the menu when clicking outside of it
+document.addEventListener("mouseup", function (e) {
+  var menus = document.getElementsByClassName("menu");
+  for (var i = 0; i < menus.length; i++) {
+    if (!menus[i].contains(e.target)) {
+      menus[i].style.display = "none";
+    }
+  }
+});
+  </script>
+</body>
+</html>

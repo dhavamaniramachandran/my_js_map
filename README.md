@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+ ### About this sample
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This sample application uses the ArcGIS Maps SDK for JavaScript ES modules (ESM), also referred to as [`@arcgis/core`](https://www.npmjs.com/package/@arcgis/core). It uses a lightweight framework called [Vite.js](https://vitejs.dev/) to compile the application locally.
 
-## Available Scripts
+### Requirements
 
-In the project directory, you can run:
+Be sure your machine has Node.js, npm and a webserver for testing of production builds. Refer to the SDK's [ES Modules guide topic](https://developers.arcgis.com/javascript/latest/es-modules/#prerequisites) for more information.
 
-### `npm start`
+### Install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install sample and its dependencies, run `npm install`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Run the sample
 
-### `npm test`
+Run the sample by using `npm run dev`. This will compile the application and launch it in a browser window.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### More information
 
-### `npm run build`
+For more information on using the ArGIS API for JavaScript with ES modules: https://developers.arcgis.com/javascript/latest/es-modules/#additional-information. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For more samples using a variety of frameworks and module bundlers: https://github.com/Esri/jsapi-resources/tree/main/esm-samples. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For more information on using the ArGIS API for JavaScript with TypeScript: https://developers.arcgis.com/javascript/latest/typescript-setup/. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To learn more about Vite.js: https://vitejs.dev/guide/why.html. 
